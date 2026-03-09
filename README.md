@@ -1,6 +1,6 @@
 # 📥 Instagram Reels Downloader Bot
 
-<img width="1024" height="1024" alt="instgram_downloader" src="https://github.com/user-attachments/assets/beea2138-b8c5-4f17-964e-9c1123af5cd6" />
+<img width="600" height="600" alt="instgram_downloader" src="https://github.com/user-attachments/assets/beea2138-b8c5-4f17-964e-9c1123af5cd6" />
 
 A high-performance Telegram bot built with Node.js and TypeScript for downloading Instagram Reels instantly.
 
