@@ -1,5 +1,9 @@
+import 'dotenv/config'
 import { Bot } from 'grammy'
 
-const bot = new Bot('8754911357:AAFvmMMkeIO0_o3y1xfaEq_4XsURlDCY6tE')
+const token = process.env.TELEGRAM_BOT_TOKEN
+if (!token) throw new Error('TELEGRAM_BOT_TOKEN is not defined in .env')
+
+const bot = new Bot(token)
 
 export { bot }

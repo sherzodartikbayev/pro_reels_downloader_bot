@@ -15,9 +15,8 @@ const downloadInstagramReel = async (url: string, ctx: Context) => {
 			url: url,
 		},
 		headers: {
-			'x-rapidapi-key': 'd6521dcf05msh8f37a1ab9e63164p1fefb1jsn9f670d68ba54',
-			'x-rapidapi-host':
-				'instagram-downloader-download-instagram-stories-videos4.p.rapidapi.com',
+			'x-rapidapi-key': process.env.RAPID_API_KEY,
+			'x-rapidapi-host': process.env.RAPID_API_HOST,
 		},
 	}
 

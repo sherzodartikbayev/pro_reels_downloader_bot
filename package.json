@@ -3,7 +3,9 @@
 	"version": "1.0.0",
 	"type": "module",
 	"scripts": {
-		"dev": "nodemon -w src -e ts --exec tsx src/index.ts"
+		"dev": "nodemon -w src -e ts --exec \"tsx --env-file=.env src/index.ts\"",
+		"build": "tsc",
+		"start": "node --env-file=.env dist/index.js"
 	},
 	"keywords": [],
 	"author": "",
