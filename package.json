@@ -4,7 +4,7 @@
 	"type": "module",
 	"scripts": {
 		"dev": "nodemon -w src -e ts --exec \"tsx --env-file=.env src/index.ts\"",
-		"build": "tsc",
+		"build": "npx tsc",
 		"start": "node --env-file=.env dist/index.js"
 	},
 	"keywords": [],
