@@ -1,9 +1,9 @@
+import { Bot, webhookCallback } from 'grammy'
 import 'dotenv/config'
-import { Bot } from 'grammy'
 
 const token = process.env.TELEGRAM_BOT_TOKEN
-if (!token) throw new Error('TELEGRAM_BOT_TOKEN is not defined in .env')
+if (!token) throw new Error('TELEGRAM_BOT_TOKEN is missing')
 
 const bot = new Bot(token)
 
-export { bot }
+export default webhookCallback(bot, 'std/http')
